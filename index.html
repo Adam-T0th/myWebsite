@@ -1,10 +1,9 @@
 <!-- make the website responsive --> <!-- Check -->
 <!-- a little about yourself, aspirations, learning sources, etc. --> <!-- Check -->
-<!-- when nav-links are clicked, "roll" to desired section (with JS/jQuery) --> <!-- pending -->
+<!-- when nav-links are clicked, "roll" to desired section (with JS/jQuery) --> <!-- Check -->
 <!-- include some king of search app, with JS & jQuery --> <!-- pending -->
 <!-- make social-media icons float when hovering over --> <!-- pending -->
-<!-- picture gallery (?) --> <!-- not 100%; images are too small -->
-<!-- the 3 "View project" buttons are too close to the next paragraph in mobile view; needs fixing -->
+<!-- picture gallery (?) --> <!-- Check -->
 
 <!DOCTYPE html>
 <html>
@@ -30,12 +29,9 @@
       </button>
       <div class="collapse navbar-collapse navbar-ex1-collapse">
           <ul class="nav navbar-nav">
-              <li><a href="#about-me">About me</a>
-              </li>
-              <li><a href="#portfolio">Portfolio</a>
-              </li>
-              <li><a href="#contact">Contact</a>
-              </li>
+              <li id="nav-about-me"><a href="#profile-picture">About me</a></li>
+              <li id="nav-portfolio"><a href="#portfolio">Portfolio</a></li>
+              <li id="nav-footer"><a href="#footer">Contact</a></li>
           </ul>
       </div>
       <!-- /.navbar-collapse -->
@@ -43,15 +39,15 @@
     <div class="container">
       <!-- basic information about myself -->
       <a href="img/profile-picture.jpg"><img id="profile-picture" src="img/profile-picture.jpg"/></a>
-      <h3>Adam Toth</h3>
+      <h3 id="about-me">Adam Toth</h3>
         <p>Welcome to my personal website. Like all similar profile sites, it's meant to showcase my current skillset as well as being a platform for people to get a brief idea about me. I've always had an analitical mindset, from a young age I've gravitated towards math and as soon as we got our first PC I was hooked on to computers as well.
           Never pursued a computer science academic certification for different reasons (mostly due to shiness, thinking I wasn't good enough). This all changed during my work as a help-desk support; I've got some insider info about how things work, some sort of guidance and support in this perpetual journey of learning, which eventually led me to web-development.</p> <!-- to be slightly rewritten -->
       <div class="portfolio">
-        <h3>Finished & pending projects, learning sources</h3>
+        <h3 id="portfolio">Finished & pending projects, learning sources</h3>
           <div class="row">
           <!-- CodeCademy -->
               <div class="col-lg-7 col-md-7">
-              <img class="img-responsive" src="img/codecademy-progress.jpg"/>
+              <img class="img-responsive img-thumbnail" src="img/codecademy.jpg"/>
               </div>
             <div class="col-lg-5 col-md-5">
               <h4><a href="https://www.codecademy.com">CodeCademy</a></h4>
@@ -63,19 +59,20 @@
           <div class="row">
           <!-- freeCodeCamp -->
             <div class="col-lg-7 col-md-7">
-            <img class="img-responsive" src="img/rolex-project-codepen.jpg"/>
+            <img class="img-responsive img-thumbnail" src="img/codepen.jpg"/>
             </div>
             <div class="col-lg-5 col-md-5">
               <h4><a href="https://www.freecodecamp.com">freeCodeCamp</a>/<a href="http://codepen.io/">CodePen</a></h4>
                 <p>I just recently came across <a href="https://www.freecodecamp.com">freeCodeCamp</a> which I find to be a terrific learning source; might be even better than <a href="https://www.codecademy.com">CodeCademy</a>. The attached project is something simple, assigned during one of the first challenges</p>
-                <a class="btn btn-primary" href="https://gist.github.com/adam-toth-n/fae672101e993e4586264d8a0f931b40"><span class="glyphicon glyphicon-chevron-left"></span>View Project</a>
+                <a class="btn btn-primary" href="https://gist.github.com/adam-toth-n/fae672101e993e4586264d8a0f931b40"><span class="glyphicon glyphicon-chevron-left"></span>View Source on Github</a></br>
+                <a class="btn btn-primary" href="https://codepen.io/slim33/pens/public/" style="margin-top: 10px;"><span class="glyphicon glyphicon-chevron-left"></span>View Projects on CodePen</a>
             </div>
           </div>
 
           <div class="row">
           <!-- TeamTreehouse -->
             <div class="col-lg-7 col-md-7">
-              <img class="img-responsive" src="img/treehouse-progress.jpg"/>
+              <img class="img-responsive img-thumbnail" src="img/treehouse.jpg"/>
             </div>
             <div class="col-lg-5 col-md-5">
               <h4><a href="https://teamtreehouse.com">TeamTreehouse</a></h4>
@@ -83,17 +80,19 @@
                 <a class="btn btn-primary" href="https://teamtreehouse.com/adamtoth"><span class="glyphicon glyphicon-chevron-left"></span>View achievements</a>
               </div>
           </div>
-      <p>Obviously, besides the aforementioned sources I've developed a really close relationship with StackOverflow, all sorts of Youtube tutorials and of couse Google-search, the Godfather of information. The ones above were the sources "that held my hand" at the scary and often confusing beginning.</p>
+      <p id="last-paragraph">Obviously, besides the aforementioned sources I've developed a really close relationship with StackOverflow, all sorts of Youtube tutorials and of couse Google-search, the Godfather of information. The ones above were the sources "that held my hand" at the scary and often confusing beginning.</p>
       </div>
     </div>
   <!-- JavaScript -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!-- jQuery -->
   <script src="1-col-portfolio/1-col-portfolio/js/jquery-1.10.2.js"></script>
   <script src="1-col-portfolio/1-col-portfolio/js/bootstrap.js"></script>
+  <script src="js/my-index.js"></script>
 
   </body>
-  <footer>
+  <footer id="footer">
     <!-- basic information/signature, e-mail/social-media links -->
+    <h4>Adam Toth - 2017</h4>
     <a href="mailto: adam.toth.n@gmail.com" class="btn azm-social azm-size-48 azm-circle azm-long-shadow azm-email-2"><i class="fa fa-envelope"></i></a> <!-- Mail -->
     <a href="https://github.com/adam-toth-n" class="btn azm-social azm-size-48 azm-circle azm-long-shadow azm-github"><i class="fa fa-github"></i></a> <!-- GitHub -->
     <a href="https://www.facebook.com/adam.toth.3950" class="btn azm-social azm-size-48 azm-circle azm-long-shadow azm-facebook"><i class="fa fa-facebook"></i></a> <!-- Facebook -->
