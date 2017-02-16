@@ -9,5 +9,14 @@ footer {
   margin: 0;
 }
 
+#last-paragraph {
+  margin-top: 50px;
+}
+
 /********** Media-Queries **************/
 /* need to modify the button bottom-margins */
+@media(max-width: 700px) {
+  .img-responsive {
+    margin-top: 50px;
+  }
+}
