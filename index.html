@@ -1,26 +1,17 @@
-<!-- make the website responsive --> <!-- Check -->
-<!-- a little about yourself, aspirations, learning sources, etc. --> <!-- Check -->
-<!-- when nav-links are clicked, "roll" to desired section (with JS/jQuery) --> <!-- Check -->
-<!-- include some king of search app, with JS & jQuery --> <!-- pending -->
-<!-- make social-media icons float when hovering over --> <!-- pending -->
-<!-- picture gallery (?) --> <!-- Check -->
-
 <!DOCTYPE html>
 <html>
   <head>
     <title>Adam Toth - personal webpage</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- include Bootstrap --> <!-- Latest compiled and minified CSS -->
     <link href="bootstrap-social-icons/bootstrap-social-icons/assets/bootstrap/css/bootstrap.min.css" type="text/css" rel="stylesheet">
     <link href="bootstrap-social-icons/bootstrap-social-icons/assets/font-awesome/css/font-awesome.min.css" type="text/css" rel="stylesheet"> <!-- Font Awesome -->
     <link href="bootstrap-social-icons/bootstrap-social-icons/assets/css/style.css" rel="stylesheet" type="text/css"> <!-- socia-media-icons CSS -->
     <link href="css/my-style.css" rel="stylesheet" type="text/css"> <!-- own CSS -->
   </head>
+  
   <body>
-    <!-- main content -->
     <nav class="navbar navbar-fixed-top navbar-inverse container" role="navigation">
-      <!-- Collect the nav links, forms, and other content for toggling -->
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
@@ -36,14 +27,16 @@
       </div>
       <!-- /.navbar-collapse -->
     </nav>
+    
     <div class="container">
-      <!-- basic information about myself -->
       <a href="img/profile-picture.jpg"><img id="profile-picture" src="img/profile-picture.jpg"/></a>
       <h3 id="about-me">Adam Toth</h3>
         <p>Welcome to my personal website. Like all similar profile sites, it's meant to showcase my current skillset as well as being a platform for people to get a brief idea about me. I've always had an analitical mindset, from a young age I've gravitated towards math and as soon as we got our first PC I was hooked on to computers as well.
           Never pursued a computer science academic certification for different reasons (mostly due to shiness, thinking I wasn't good enough). This all changed during my work as a help-desk support; I've got some insider info about how things work, some sort of guidance and support in this perpetual journey of learning, which eventually led me to web-development.</p> <!-- to be slightly rewritten -->
+      
       <div class="portfolio">
         <h3 id="portfolio">Finished & pending projects, learning sources</h3>
+          
           <!-- Random Quote Generator -->
           <div class="row">
             <div class="col-lg-7 col-md-7">
@@ -92,18 +85,17 @@
                 <a class="btn btn-primary" href="https://teamtreehouse.com/adamtoth"><span class="glyphicon glyphicon-chevron-left"></span>View achievements</a>
               </div>
           </div>
+      
       <p id="last-paragraph">Obviously, besides the aforementioned sources I've developed a really close relationship with StackOverflow, all sorts of Youtube tutorials and of couse Google-search, the Godfather of information. The ones above were the sources "that held my hand" at the scary and often confusing beginning.</p>
       </div>
-    </div>
-  <!-- JavaScript -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> <!-- jQuery -->
+    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
   <script src="1-col-portfolio/1-col-portfolio/js/jquery-1.10.2.js"></script>
   <script src="1-col-portfolio/1-col-portfolio/js/bootstrap.js"></script>
   <script src="js/my-index.js"></script>
-
   </body>
+  
   <footer id="footer">
-    <!-- basic information/signature, e-mail/social-media links -->
     <h4>Adam Toth - 2017</h4>
     <a href="mailto: adam.toth.n@gmail.com" class="btn azm-social azm-size-48 azm-circle azm-long-shadow azm-email-2"><i class="fa fa-envelope"></i></a> <!-- Mail -->
     <a href="https://github.com/adam-toth-n" class="btn azm-social azm-size-48 azm-circle azm-long-shadow azm-github"><i class="fa fa-github"></i></a> <!-- GitHub -->
