@@ -1,31 +1,33 @@
-$(document).ready(function() {
-  $("#nav-about-me").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#profile-picture").offset().top
-    }, 2000);
+  
+  // add and remove the class from the navbar in order to make it more legible during scrolling
+  $(function () {
+    $(document).scroll(function () {
+        let $nav = $("#mainNavbar");
+        $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+    });
   });
 
-  $("#nav-portfolio").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#portfolio").offset().top
-    }, 2000);
+  // scroll down to a specific ID
+  $("#about-me-link").click(function(e) {
+    e.preventDefault();	
+    let position = $($(this).attr("href")).offset().top;
+    $("body, html").animate({
+      scrollTop: position
+    }, 500 );
   });
 
-  $("#nav-footer").click(function() {
-    $('html, body').animate({
-        scrollTop: $("#footer").offset().top
-    }, 2000);
+  $("#portfolio-link").click(function(e) {
+    e.preventDefault();	
+    let position = $($(this).attr("href")).offset().top;
+    $("body, html").animate({
+      scrollTop: position
+    }, 500 );
   });
 
-  // alternative ... not working
-  // $('#nav-about-me').click = function (){
-  //   $(document).scrollTo('#top');
-  // }
-  // $('#nav-portfolio').click = function (){
-  //   $(document).scrollTo('#portfolio');
-  // }
-  //
-  // $('#nav-footer').click = function (){
-  //   $(document).scrollTo('#footer');
-  // }
-});
+  $("#contact-link").click(function(e) {
+    e.preventDefault();	
+    let position = $($(this).attr("href")).offset().top;
+    $("body, html").animate({
+      scrollTop: position 
+    }, 500);
+  });
