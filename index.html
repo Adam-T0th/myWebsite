@@ -1,125 +1,417 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Adam Toth - personal webpage</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="bootstrap-social-icons/bootstrap-social-icons/assets/font-awesome/css/font-awesome.min.css" type="text/css" rel="stylesheet"> <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Oswald:wght@500&family=Tangerine:wght@700&display=swap" rel="stylesheet">
-    <link href="css/my-style.css" rel="stylesheet" type="text/css">
-    <link rel="shortcut icon" href="img/programming-favicon.png">
-  </head>
-  
-  <body>
-    <!-- <li id="nav-about-me"><a href="#profile-picture">About me</a></li>
-    <li id="nav-portfolio"><a href="#portfolio">Portfolio</a></li>
-    <li id="nav-footer"><a href="#footer">Contact</a></li> -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark" id="mainNavbar">
-      <div class="container">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#about-me" id="about-me-link">About me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#portfolio" id="portfolio-link">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#footer" id="contact-link">Contact</a>
-            </li>
-          </ul>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Adam Toth - Developer</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;700&display=swap" rel="stylesheet">
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/my-style.css">
+        <link rel="shortcut icon" href="img/programming-favicon.png">
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+            <div class="container">
+                <!-- <a class="navbar-brand js-scroll-trigger" href="#page-top">Adam Toth</a> -->
+                <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead bg-primary text-white text-center">
+            <div class="container d-flex align-items-center flex-column">
+                <!-- Masthead Avatar Image-->
+                <img class="masthead-avatar mb-5 profile-picture" src="img/IMG_2133.jpeg" alt="" />
+                <!-- Masthead Heading-->
+                <h1 class="masthead-heading mb-0">Adam Toth</h1>
+                <!-- Masthead Subheading-->
+                <p class="masthead-subheading font-weight-light mb-0">Life-long student - Developer - Team-player</p>
+            </div>
+        </header>
+        <!-- Skillset section -->
+        <section class="page-section portfolio">
+          <div class="container">
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-5">Skillset</h2>
+            <div class="row skills-icons">
+              <div class="col-sm-4">
+                <img src="img/HTML5_logo_and_wordmark.svg" alt="html-logo" title="HTML§" id="html-logo">
+              </div>
+              <div class="col-sm-4">
+                <img src="img/CSS3_logo_and_wordmark.svg" alt="css-logo" title="CSS" id="css-logo">
+              </div>
+              <div class="col-sm-4">
+                <img src="img/Bootstrap_logo.svg" alt="bootstrap-logo" title="Bootstrap" id="bootstrap-logo">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-4">
+                <img src="img/JavaScript-logo.png" alt="JavaScript-logo" title="JavaScript" id="js-logo">
+              </div>
+              <div class="col-sm-4">
+                <img src="img/Node.js_logo.svg" alt="Node JS Logo" title="NodeJS" id="nodeJS-logo">
+              </div>
+              <div class="col-sm-4">
+                <img src="img/file_type_ejs_icon_130626.svg" alt="EJS logo" title="EJS" id="ejs-logo">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-4">
+                <img src="img/Npm-logo.svg" alt="NPM-logo" title="NPM (Node Package Manager)" id="npm-logo">
+              </div>
+              <div class="col-sm-4">
+                <img src="img/express1-crop.png" alt="ExpressJS Logo" title="ExpressJS Logo" id="expressJS-logo">
+              </div>              
+            </div>        
+          </div>
+        </section>
+        <!-- Portfolio Section-->
+        <section class="page-section portfolio" id="portfolio">
+            <div class="container">
+                <!-- Portfolio Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Grid Items-->
+                <div class="row">
+                    <!-- Portfolio Item 1-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="img/lamour-screenshot.jpg" alt="" />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 2-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="img/randQtGen - preview-crop.jpg" alt="" />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 3-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="img/oradea-website-screenshot.jpg" alt="" />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 4-->
+                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="img/toDoApp-preview.jpg" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Section-->
+        <section class="page-section bg-primary text-white mb-0" id="about">
+            <div class="container">
+                <!-- About Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-white">About me</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- About Section Content-->
+                <div class="row">
+                    <div class="col-lg-4 ml-auto"><p class="lead">Hello all, I'm Adam, IT enthusiast, very passionate about web development, being self-taught whilst working a very different full-time job.
+
+                      With experience in HTML, CSS, Javascript and some of its additional tools such as node.JS, Express, ejs and npm, I am constantly learning new development tools.
+                      </p></div>
+                    <div class="col-lg-4 mr-auto"><p class="lead">At the moment I'm busy building projects for my friends businesses and diversifying my skillset; feel free to have a look down below. I am also setting up my freelancing profiles on specialized sites. When I'm not coding, I like to catch up on everything new gadget-related and wristwatches, travel around Europe or have a nice drive somewhere in the South-East England area.</p></div>
+                </div>
+                <!-- About Section Button-->
+            </div>
+        </section>
+        <!-- Contact Section-->
+        <section class="page-section" id="contact">
+            <div class="container">
+                <!-- Contact Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Contact Section Form-->
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19.-->
+                        <form id="contactForm" name="sentMessage" novalidate="novalidate">
+                            <div class="control-group">
+                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                    <label>Name</label>
+                                    <input class="form-control" id="name" type="text" placeholder="Name" required="required" data-validation-required-message="Please enter your name." />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                    <label>Email Address</label>
+                                    <input class="form-control" id="email" type="email" placeholder="Email Address" required="required" data-validation-required-message="Please enter your email address." />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                    <label>Phone Number</label>
+                                    <input class="form-control" id="phone" type="tel" placeholder="Phone Number" required="required" data-validation-required-message="Please enter your phone number." />
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <div class="control-group">
+                                <div class="form-group floating-label-form-group controls mb-0 pb-2">
+                                    <label>Message</label>
+                                    <textarea class="form-control" id="message" rows="5" placeholder="Message" required="required" data-validation-required-message="Please enter a message."></textarea>
+                                    <p class="help-block text-danger"></p>
+                                </div>
+                            </div>
+                            <br />
+                            <div id="success"></div>
+                            <div class="form-group"><button class="btn btn-primary btn-xl" id="sendMessageButton" type="submit">Send</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer text-center">
+            <div class="container">
+                <div class="row">
+                    <!-- Footer Location-->
+                    <div class="col-lg-6 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Location</h4>
+                        <p class="lead mb-0">
+                            Harrow, Middlesex
+                            <br />
+                            London, United Kingdom
+                        </p>
+                    </div>
+                    <!-- Footer Social Icons-->
+                    <div class="col-lg-6 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Around the Web</h4>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/adam.toth.3950" target="_blank"><i class="fab fa-fw fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://twitter.com/adam_toth89" target="_blank"><i class="fab fa-fw fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/adam-toth-3ab1691a7/" target="_blank"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                    </div>              
+                </div>
+            </div>
+        </footer>
+        <!-- Copyright Section-->
+        <div class="copyright py-4 text-center footer-copyright-text">
+            <div class="container"><small>© Adam Toth 2020</small></div>
         </div>
-      </div>
-    </nav>
-    
-    <div class="container" id="main-container">
-      <div class="profile-image">
-        <img id="profile-picture" src="img/IMG_2133.jpeg" class="img-responsive img-thumbnail">
-      </div>
-      <span id="about-me"></span>
-      <h3>Adam Toth</h3>
-        <p>Hello all, I'm Adam, IT enthusiast, very passionate about web development, being self-taught whilst working a very different full-time job.</p>
-        <p>With experience in HTML, CSS, Javascript and some of its additional tools such as node.JS, Express, ejs and npm, I am constantly learning new development tools. At the moment I'm busy building projects for my friends businesses and diversifying my skillset; feel free to have a look down below. I am also setting up my freelancing profiles on specialized sites.</p>
-        <p>When I'm not coding, I like to catch up on everything new gadget-related and wristwatches, travel around Europe or have a nice drive somewhere in the South-East England area.</p>
-        <span id="portfolio"></span>
-      <hr>
-      <div>
-        <h3>Finished & pending projects, learning sources</h3>
-          
-          <!-- Random Quote Generator -->
-          <div class="row">
-            <div class="col-12 col-md-6">
-            <img class="img-responsive img-thumbnail" src="img/randQtGen - preview.jpg">
+        <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
+        <div class="scroll-to-top d-lg-none position-fixed">
+            <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a>
+        </div>
+        <!-- Portfolio Modals-->
+        <!-- Portfolio Modal 1-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="portfolioModal1Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal1Label">L'amour Dominicain</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line divider-white"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->                                  
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5">This is a website written in hungarian for hungarian clients that wish to travel to the Dominican Republic through one of my friend's travel companies.</p>
+                                    <a href="https://github.com/adam-toth-n/lamour-redesigned" target="_blank">
+                                      <button class="btn btn-primary check-code-button">
+                                      <i class="fas fa-arrow-circle-right"></i>
+                                        Check code on Github
+                                      </button>
+                                    </a>
+                                    <br>
+                                    <a href="https://adam-toth-n.github.io/lamour-redesigned/" target="_blank">
+                                      <button class="btn btn-primary">
+                                        <i class="fas fa-arrow-circle-right"></i>
+                                          Visit site
+                                      </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-12 col-md-6">
-              <h4>Random Quote Generator</h4>              
-                <p>As the name suggests, this is a quote generator, randomly picking from my favourite quotes. Might add a Twitter-share option later on.</p>
-                <a class="btn btn-info outline" href="https://adam-toth-n.github.io/randomQuoteGenerator/" target="_blank"><span class="glyphicon glyphicon-chevron-left"></span>View project</a>
-            </div>          
-          </div>
-        
-          <!-- CodeCademy -->
-          <div class="row">          
-              <div class="col-12 col-md-6">
-              <img class="img-responsive img-thumbnail" src="img/lamour-screenshot.jpg"/>
-              </div>
-            <div class="col-12 col-md-6">
-              <h4>L'amour Dominicain</h4>
-                <p>This is a website written in hungarian for hungarian clients that wish to travel to the Dominican Republic through one of my friend's travel companies.</p>
-                <a class="btn btn-primary outline" href="https://github.com/adam-toth-n/lamour-redesigned" target="_blank">View Source on Github</a>
-                <a class="btn btn-info outline" href="https://adam-toth-n.github.io/lamour-redesigned/" target="_blank">View site</a>
+        </div>
+        <!-- Portfolio Modal 2-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="portfolioModal2Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal2Label">Random Quote Generator</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5">A collection of my favourite quotes, shareable/tweetable through ... Twitter.</p>
+                                    <a href="https://github.com/adam-toth-n/randomQuoteGenerator" target="_blank">
+                                      <button class="btn btn-primary check-code-button">
+                                        <i class="fas fa-arrow-circle-right"></i>
+                                          Check code on Github
+                                      </button>
+                                    </a>
+                                    <br>
+                                    <a href="https://adam-toth-n.github.io/randomQuoteGenerator/" target="_blank">
+                                      <button class="btn btn-primary">
+                                        <i class="fas fa-arrow-circle-right"></i>
+                                          Visit site
+                                      </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-
-          <!-- freeCodeCamp -->
-          <div class="row">          
-            <div class="col-12 col-md-6">
-            <img class="img-responsive img-thumbnail" src="img/codepen.jpg"/>
+        </div>
+        <!-- Portfolio Modal 3-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="portfolioModal3Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal3Label">Oradea</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <p class="mb-5">It is my hometown in Bihor County, Romania. In my (slightly biased) opinion it is the best place to live within the country, with plenty of activities and sights to see.</p>
+                                    <a href="https://github.com/adam-toth-n/oradea" target="_blank">
+                                      <button class="btn btn-primary check-code-button">
+                                        <i class="fas fa-arrow-circle-right"></i>
+                                          Check code on Github
+                                      </button>
+                                    </a>
+                                    <br>
+                                    <a href="https://adam-toth-n.github.io/oradea/" target="_blank">
+                                      <button class="btn btn-primary">
+                                        <i class="fas fa-arrow-circle-right"></i>
+                                          Visit site
+                                      </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-12 col-md-6">
-              <h4><a href="https://www.freecodecamp.com">freeCodeCamp</a>/<a href="http://codepen.io/">CodePen</a></h4>
-                <p>I just recently came across <a href="https://www.freecodecamp.com">freeCodeCamp</a> which I find to be a terrific learning source; might be even better than <a href="https://www.codecademy.com">CodeCademy</a>. The attached project is something simple, assigned during one of the first challenges</p>
-                <a class="btn btn-primary outline" href="https://gist.github.com/adam-toth-n/fae672101e993e4586264d8a0f931b40"><span class="glyphicon glyphicon-chevron-left"></span>View Source on Github</a></br>
-                <a class="btn btn-info" href="https://codepen.io/slim33/pens/public/" style="margin-top: 10px;" target="_blank"><span class="glyphicon glyphicon-chevron-left"></span>View Projects on CodePen</a>
+        </div>
+        <!-- Portfolio Modal 4-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-labelledby="portfolioModal4Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal4Label">To-do App</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <p class="mb-5">A Javascript To-do app; it is more focused on function than style though.</p>
+                                    <a href="https://github.com/adam-toth-n/toDoApp" target="_blank">
+                                        <button class="btn btn-primary check-code-button">
+                                          <i class="fas fa-arrow-circle-right"></i>
+                                            Check code on Github
+                                        </button>
+                                      </a>
+                                      <br>
+                                      <a href="https://adam-toth-n.github.io/toDoApp/" target="_blank">
+                                        <button class="btn btn-primary">
+                                          <i class="fas fa-arrow-circle-right"></i>
+                                            Visit site
+                                        </button>
+                                      </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-
-          <!-- TeamTreehouse -->
-          <div class="row">          
-            <div class="col-12 col-md-6">
-              <img class="img-responsive img-thumbnail" src="img/treehouse.jpg"/>
-            </div>
-            <div class="col-12 col-md-6">
-              <h4><a href="https://teamtreehouse.com">TeamTreehouse</a></h4>
-                <p>Last, but definitely not least (it is actually no.1 for me) Treehouse. This site is truly something else. So much to learn, so much to see/try than I often found myself jumping tracks just to see quicker what I'll learn down the road. The entire website as well as the teachers just inspire confidence. It's got it's own code editor ("Workspaces") which can be used any time. Their social-media presence is also great, and as such they are able to post motivational quotes/pictures/stories weekly, which are much needed for a "toddler" aspiring developer.</p>
-                <a class="btn btn-info outline" href="https://teamtreehouse.com/adamtoth"><span class="glyphicon glyphicon-chevron-left" target="_blank"></span>View achievements</a>
-              </div>
-          </div>
-      
-      <p id="last-paragraph">Obviously, besides the aforementioned sources I've developed a really close relationship with StackOverflow, all sorts of Youtube tutorials and of couse Google-search, the Godfather of information. The ones above were the sources "that held my hand" at the scary and often confusing beginning.</p>
-      </div>
-    
-  
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js" crossorigin="anonymous"></script> <!-- required for the scrolling animation -->
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-  <script src="js/my-index.js"></script>
-  </body>
-  <hr>
-  <footer id="footer">
-    <div class="row">
-      <div class="col-12 footer-div">
-        <h4 id="footer-header">Adam Toth - 2017</h4>
-      </div>
-      <div class="col-12 footer-div">
-        <a href="mailto: adam.toth.n@gmail.com" class="btn azm-social azm-size-48 azm-circle azm-long-shadow azm-email-2 footer-links"><i class="fa fa-envelope"></i></a> <!-- Mail -->
-        <a href="https://github.com/adam-toth-n" class="btn azm-social azm-size-48 azm-circle azm-long-shadow azm-github footer-links"><i class="fa fa-github"></i></a> <!-- GitHub -->
-      </div>
-    </div>
-  </footer>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Contact form JS-->
+        <script src="assets/mail/jqBootstrapValidation.js"></script>
+        <script src="assets/mail/contact_me.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
 </html>

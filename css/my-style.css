@@ -1,91 +1,55 @@
 * {
-  /* font-family: 'Baloo Da 2', cursive; */
   font-family: 'Josefin Sans', sans-serif;
-  font-weight: 300;
-  font-size: 1.1rem;
-  line-height: 1.5em !important;
-}
-
-hr {
-  border: 0;
-  height: 1px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-  margin: 50px;
 }
 
 .navbar {
-  background: linear-gradient(90deg, rgba(66, 199, 219, 0.9), rgba(248, 246, 246, 0.2));  
+  background-color: #FFF !important;
 }
 
-.nav-link {
+.profile-picture {
+  border-radius: 5%;
+}
+
+.masthead-subheading {
+  color: #FFF;
+}
+
+.masthead-heading {
+  color: #FFF;
+  font-weight: 300;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+ .navbar-nav li.nav-item a.nav-link {
+   font-weight: 400;
+ }
+
+ .text-uppercase {
+  font-family: 'Josefin Sans', sans-serif;
+ }
+
+
+ .fas, .fa-star {
+   color: #000;
+ }
+
+ .footer-copyright-text {
+   color: #fff;
+ }
+
+ .divider-custom-line-first, .divider-custom-line-first, . {
   color: #fff !important;
-  font-weight: 600;
-}
+ }
 
-.navbar.scrolled {
-  background: rgb(66,199,219);
-  transition: background 500ms;
-}
+ .check-code-button {
+   margin-bottom: 2%;
+ }
 
-.btn, .outline {
-	background: none;
-	padding: 10px 20px;
-}
-
-.btn-info, .outline {
-	border: 2px solid #0099cc;
-	color: #0099cc;
-}
-
-.btn-info.outline:hover, .btn-info.outline:focus, .btn-info.outline:active, .btn-info.outline.active, .open > .dropdown-toggle.btn-info {
-	color: #ecf1f3;
-	border-color: #33a6cc;
-}
-.btn-info.outline:active, .btn-info.outline.active {
-	border-color: #007299;
-	color: #007299;
-	box-shadow: none;
-}
-
-#profile-picture {
-  border-radius: 5px;
-  height: 400px;
-  width: 300px;
-  box-shadow:
-    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-    0 12.5px 10px rgba(0, 0, 0, 0.06),
-    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-    0 100px 80px rgba(0, 0, 0, 0.12);
-} 
-
-.profile-image {
-  margin: 70px;
+ .skills-icons {
   display: flex;
   justify-content: center;
-}
+ }
 
-.row {
-  margin: 50px;
-}
-
-footer {
-  margin: 0;
-}
-
-.footer-div {
-  display: flex;
-  justify-content: center;
-}
-
-#last-paragraph {
-  margin-top: 50px;
-}
-
-/********** Media-Queries **************/
-@media (max-width: 450px) {
-  #profile-picture {
-    height: 350px;
-  }
-}
+ #html-logo, #css-logo, #js-logo, #nodeJS-logo, #ejs-logo, #npm-logo, #expressJS-logo, #bootstrap-logo {
+   height: 50px;
+ }
