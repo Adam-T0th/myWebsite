@@ -44,11 +44,11 @@
  .check-code-button {
    margin-bottom: 2%;
  }
-
+/* 
  .skills-icons {
   display: flex;
   justify-content: center;
- }
+ } */
 
  #html-logo, #css-logo, #js-logo, #nodeJS-logo, #ejs-logo, #npm-logo, #expressJS-logo, #bootstrap-logo {
    height: 50px;
